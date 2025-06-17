@@ -2,7 +2,7 @@ import type { NextConfig } from 'next'
 
 const allowedBots = '.*(bot|telegram|baidu|bing|yandex|iframely|whatsapp|facebook).*'
 
-export default {
+const config: NextConfig = {
   async rewrites() {
     return [
       {
@@ -14,7 +14,9 @@ export default {
   },
   // Enable edge runtime for API routes
   experimental: {
-    serverActions: true,
+    serverActions: {
+      allowedOrigins: ['*']
+    }
   },
   // Ensure API routes are properly handled
   async headers() {
@@ -30,6 +32,8 @@ export default {
       },
     ]
   },
-} as NextConfig
+}
+
+export default config
 
 

@@ -2,32 +2,6 @@
   "version": 3,
   "middleware": {},
   "functions": {
-    "/api/i/route": {
-      "files": [
-        "server/server-reference-manifest.js",
-        "server/app/api/i/route_client-reference-manifest.js",
-        "server/middleware-build-manifest.js",
-        "server/middleware-react-loadable-manifest.js",
-        "server/next-font-manifest.js",
-        "server/interception-route-rewrite-manifest.js",
-        "server/edge-runtime-webpack.js",
-        "server/app/api/i/route.js"
-      ],
-      "name": "app/api/i/route",
-      "page": "/api/i/route",
-      "matchers": [
-        {
-          "regexp": "^/api/i$",
-          "originalSource": "/api/i"
-        }
-      ],
-      "wasm": [],
-      "assets": [],
-      "env": {
-        "__NEXT_BUILD_ID": "development",
-        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "OC+ipIKQWX6ZhdfJlnZlg520WeVy/Ibkw2iXY9jJyfU="
-      }
-    },
     "/route": {
       "files": [
         "server/server-reference-manifest.js",
@@ -45,6 +19,32 @@
         {
           "regexp": "^/$",
           "originalSource": "/"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "OC+ipIKQWX6ZhdfJlnZlg520WeVy/Ibkw2iXY9jJyfU="
+      }
+    },
+    "/api/i/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/i/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/api/i/route.js"
+      ],
+      "name": "app/api/i/route",
+      "page": "/api/i/route",
+      "matchers": [
+        {
+          "regexp": "^/api/i$",
+          "originalSource": "/api/i"
         }
       ],
       "wasm": [],

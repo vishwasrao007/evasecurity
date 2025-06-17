@@ -1,0 +1,59 @@
+{
+  "version": 3,
+  "middleware": {},
+  "functions": {
+    "/api/i/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/i/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/api/i/route.js"
+      ],
+      "name": "app/api/i/route",
+      "page": "/api/i/route",
+      "matchers": [
+        {
+          "regexp": "^/api/i$",
+          "originalSource": "/api/i"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "gir+m2nXe11FdTSvKpXI0zK6b/ifSRB44cxs5ITwXsM="
+      }
+    },
+    "/api/c/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/api/c/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/api/c/route.js"
+      ],
+      "name": "app/api/c/route",
+      "page": "/api/c/route",
+      "matchers": [
+        {
+          "regexp": "^/api/c$",
+          "originalSource": "/api/c"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "gir+m2nXe11FdTSvKpXI0zK6b/ifSRB44cxs5ITwXsM="
+      }
+    }
+  },
+  "sortedMiddleware": []
+}

@@ -25,7 +25,33 @@
       "assets": [],
       "env": {
         "__NEXT_BUILD_ID": "development",
-        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "gir+m2nXe11FdTSvKpXI0zK6b/ifSRB44cxs5ITwXsM="
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "OC+ipIKQWX6ZhdfJlnZlg520WeVy/Ibkw2iXY9jJyfU="
+      }
+    },
+    "/route": {
+      "files": [
+        "server/server-reference-manifest.js",
+        "server/app/route_client-reference-manifest.js",
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/route.js"
+      ],
+      "name": "app/route",
+      "page": "/route",
+      "matchers": [
+        {
+          "regexp": "^/$",
+          "originalSource": "/"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "OC+ipIKQWX6ZhdfJlnZlg520WeVy/Ibkw2iXY9jJyfU="
       }
     },
     "/api/c/route": {
@@ -51,7 +77,7 @@
       "assets": [],
       "env": {
         "__NEXT_BUILD_ID": "development",
-        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "gir+m2nXe11FdTSvKpXI0zK6b/ifSRB44cxs5ITwXsM="
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "OC+ipIKQWX6ZhdfJlnZlg520WeVy/Ibkw2iXY9jJyfU="
       }
     }
   },

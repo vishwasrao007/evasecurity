@@ -35,7 +35,7 @@ export default function AiTalkingAnimation({ onStartListening, onStopListening, 
   // Add effect to handle auto-stop after "Have a wonderful day!"
   useEffect(() => {
     if (currentText.toLowerCase().includes('have a wonderful day!')) {
-      // Wait for 1 second after the message is complete
+      // Wait for 5 second after the message is complete
       const timer = setTimeout(() => {
         if (aiState === 'speaking' || aiState === 'listening') {
           // First stop
@@ -48,7 +48,29 @@ export default function AiTalkingAnimation({ onStartListening, onStopListening, 
             setAiState('idle')
           }, 200)
         }
-      }, 1000)
+      }, 5000)
+      
+      return () => clearTimeout(timer)
+    }
+  }, [currentText, onStopListening, aiState])
+
+  // Add effect to handle auto-stop after "Thank you for chatting! Take care!"
+  useEffect(() => {
+    if (currentText.toLowerCase().includes('thank you for chatting! take care!')) {
+      // Wait for 5 seconds after the message is complete
+      const timer = setTimeout(() => {
+        if (aiState === 'speaking' || aiState === 'listening') {
+          // First stop
+          onStopListening?.()
+          setAiState('idle')
+          
+          // Second stop after a small delay
+          setTimeout(() => {
+            onStopListening?.()
+            setAiState('idle')
+          }, 200)
+        }
+      }, 5000)
       
       return () => clearTimeout(timer)
     }

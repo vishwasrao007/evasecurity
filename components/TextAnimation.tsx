@@ -91,16 +91,16 @@ export default function AiTalkingAnimation({ onStartListening, onStopListening, 
               <span className="text-white text-xl font-medium">Your all new AI Assistant</span>
             </div>
           )}
-          <div className="relative flex items-center justify-center mb-0 md:mb-[88px]">
+          <div className="relative flex items-center justify-center mb-0 md:mb-[30px]">
             <div
               className="rounded-full p-2"
               onClick={handleCircleClick}
-              style={{ width: 350, height: 300 }}
+              style={{ width: 300, height: 250 }}
         >
           <img
                 src={aiState === 'listening' ? '/eva.gif' : aiState === 'speaking' ? '/eva.gif' : '/eva.gif'}
             alt={aiState === 'listening' ? 'AI is listening' : aiState === 'speaking' ? 'AI is speaking' : 'AI is idle'}
-                style={{ width: 600, height: 400 }}
+                style={{ width: 500, height: 300 }}
                 className="rounded-full object-cover"
           />
             </div>

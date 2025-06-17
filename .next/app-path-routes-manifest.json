@@ -1,8 +1,0 @@
-{
-  "/_not-found/page": "/_not-found",
-  "/c/[slug]/page": "/c/[slug]",
-  "/preview/page": "/preview",
-  "/route": "/",
-  "/api/i/route": "/api/i",
-  "/api/c/route": "/api/c"
-}

@@ -94,7 +94,6 @@ export default function AiTalkingAnimation({ onStartListening, onStopListening, 
           className="absolute top-0 left-0 w-full h-full"
           style={{
             background: 'radial-gradient(223.36% 111.8% at 50% 100%, #E8DDFF 0%, #71B6E4 40.5%, #687FDE 69.5%, #3A59D6 100%)',
-            filter: 'blur(12px)',
             zIndex: -1,
             borderRadius: '55px'
           }}
